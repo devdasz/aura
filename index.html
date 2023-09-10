@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="nav">
+
+        <div class="items-left">
+            <!-- <a href="#">services</a>
+            <a href="#">rooms</a> -->
+        </div>
+        <div class="items-right">
+            <!-- <a href="#">bookin</a>
+            <a href="#">contact</a> -->
+        </div>
+    </div>
+    <div class="logo-container">
+        <!-- <h1 class="logo">TOTEC</h1> -->
+        <img src="./Logo2.png" class="logo" alt="logo">
+    </div>
+    <div class="container">
+        <div class="grid">
+            <div class="hero-text">
+                <h1 class="headline">
+                    Do you shine like moon?
+                </h1>
+                <h3 class="subheading">
+                    Unlock Your Hidden Potential and Illuminate Your Path to Excellence.
+                </h3>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <img src="hero.jpg" alt="hero image" srcset="">
+    </div>
+
+    <script>
+        ScrollTrigger.create({
+            animation: gsap.from(
+                ".logo", {
+                y: "50vh",
+                // x:"50vw",
+                scale: 10,
+                yPercent: -50,
+                // xPercent:-50
+                opacity: 0.2
+
+            }
+            ),
+            scrub: true,
+            trigger: ".content",
+            start: "top bottom",
+            endTrigger: ".content",
+            end: "top center"
+        });
+    </script>
+</body>
+
+</html>
