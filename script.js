@@ -39,7 +39,7 @@ ScrollTrigger.create({
         // x:"50vw",
         // scale: scaleValue,
         // yPercent: -50,
-        xPercent:-100,
+        xPercent:-120,
         // opacity: 0.5
 
     }
@@ -85,9 +85,9 @@ ScrollTrigger.create({
     ),
     scrub: 2,
     trigger: "#crisis-section",
-    start: "top 40%",
+    start: "top 60%",
     endTrigger: "#crisis-section",
-    end: "top 40%",
+    end: "top 60%",
     // markers: true,
 });
 ScrollTrigger.create({
@@ -161,8 +161,8 @@ ScrollTrigger.create({
     ),
     scrub: 2,
     trigger: "#what-are-we-section",
-    start: "top 40%",
+    start: "top 60%",
     endTrigger: "#what-are-we-section",
-    end: "top 40%",
+    end: "top 60%",
     // markers: true,
 });     
