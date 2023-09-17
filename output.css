@@ -1230,16 +1230,20 @@ input:checked + .toggle-bg {
   margin-top: 1rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
+.-mr-1 {
+  margin-right: -0.25rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .box-border {
@@ -1248,20 +1252,6 @@ input:checked + .toggle-bg {
 
 .box-content {
   box-sizing: content-box;
-}
-
-.line-clamp-2 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
-
-.line-clamp-4 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
 }
 
 .line-clamp-none {
@@ -1367,10 +1357,6 @@ input:checked + .toggle-bg {
   height: 1.5rem;
 }
 
-.h-80 {
-  height: 20rem;
-}
-
 .h-9 {
   height: 2.25rem;
 }
@@ -1386,6 +1372,10 @@ input:checked + .toggle-bg {
 
 .h-full {
   height: 100%;
+}
+
+.h-5 {
+  height: 1.25rem;
 }
 
 .min-h-screen {
@@ -1412,21 +1402,17 @@ input:checked + .toggle-bg {
   width: 16rem;
 }
 
-.w-auto {
-  width: auto;
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .w-full {
   width: 100%;
 }
 
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
+.w-5 {
+  width: 1.25rem;
 }
 
 .max-w-2xl {
@@ -2023,16 +2009,16 @@ input:checked + .toggle-bg {
   gap: 4rem;
 }
 
+.gap-24 {
+  gap: 6rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-24 {
-  gap: 6rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2349,10 +2335,6 @@ input:checked + .toggle-bg {
   border-radius: 0.5rem;
 }
 
-.rounded-sm {
-  border-radius: 0.125rem;
-}
-
 .rounded-md {
   border-radius: 0.375rem;
 }
@@ -2564,9 +2546,9 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / 0.5);
 }
 
-.bg-gray-400 {
+.bg-primary-700 {
   --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -2828,6 +2810,21 @@ input:checked + .toggle-bg {
   line-height: 1.25rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2844,12 +2841,12 @@ input:checked + .toggle-bg {
   font-weight: 500;
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
 .font-normal {
   font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -2932,36 +2929,20 @@ input:checked + .toggle-bg {
   line-height: 1;
 }
 
-.leading-3 {
-  line-height: .75rem;
-}
-
-.leading-5 {
-  line-height: 1.25rem;
-}
-
-.leading-10 {
-  line-height: 2.5rem;
-}
-
-.leading-\[20px\] {
-  line-height: 20px;
-}
-
-.leading-\[62px\] {
-  line-height: 62px;
+.leading-tight {
+  line-height: 1.25;
 }
 
 .tracking-tight {
   letter-spacing: -0.025em;
 }
 
-.tracking-wider {
-  letter-spacing: 0.05em;
-}
-
 .tracking-wide {
   letter-spacing: 0.025em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
 
 .text-\[\#00acee\] {
@@ -3074,16 +3055,12 @@ input:checked + .toggle-bg {
   text-decoration-style: wavy;
 }
 
-.underline-offset-1 {
-  text-underline-offset: 1px;
+.underline-offset-4 {
+  text-underline-offset: 4px;
 }
 
 .underline-offset-2 {
   text-underline-offset: 2px;
-}
-
-.underline-offset-4 {
-  text-underline-offset: 4px;
 }
 
 .antialiased {
@@ -3449,6 +3426,11 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-primary-800:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -3515,12 +3497,25 @@ input:checked + .toggle-bg {
   --tw-ring-color: rgb(229 231 235 / var(--tw-ring-opacity));
 }
 
+.focus\:ring-primary-300:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(147 197 253 / var(--tw-ring-opacity));
+}
+
 .focus\:hover\:text-center:hover:focus {
   text-align: center;
 }
 
 .hover\:focus\:text-center:focus:hover {
   text-align: center;
+}
+
+:is(.dark .dark\:block) {
+  display: block;
+}
+
+:is(.dark .dark\:hidden) {
+  display: none;
 }
 
 :is(.dark .dark\:border-blue-500) {
@@ -3564,6 +3559,11 @@ input:checked + .toggle-bg {
 
 :is(.dark .dark\:bg-gray-800\/50) {
   background-color: rgb(31 41 55 / 0.5);
+}
+
+:is(.dark .dark\:bg-gray-900) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
 :is(.dark .dark\:bg-opacity-80) {
@@ -3625,9 +3625,19 @@ input:checked + .toggle-bg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+:is(.dark .dark\:focus\:ring-primary-900:focus) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(30 58 138 / var(--tw-ring-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .sm\:text-lg {
@@ -3640,18 +3650,35 @@ input:checked + .toggle-bg {
     line-height: 1.75rem;
   }
 
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
 }
 
 @media (min-width: 768px) {
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:h-\[37rem\] {
     height: 37rem;
   }
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:justify-around {
@@ -3727,16 +3754,16 @@ input:checked + .toggle-bg {
     align-items: flex-start;
   }
 
+  .lg\:gap-0 {
+    gap: 0px;
+  }
+
   .lg\:gap-16 {
     gap: 4rem;
   }
 
   .lg\:gap-8 {
     gap: 2rem;
-  }
-
-  .lg\:gap-0 {
-    gap: 0px;
   }
 
   .lg\:px-6 {
@@ -3758,14 +3785,13 @@ input:checked + .toggle-bg {
     line-height: 2.25rem;
   }
 
-  .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
   .lg\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+  .lg\:leading-\[90px\] {
+    line-height: 90px;
   }
 
   .lg\:tracking-wide {
@@ -3780,6 +3806,10 @@ input:checked + .toggle-bg {
 @media (min-width: 1280px) {
   .xl\:gap-0 {
     gap: 0px;
+  }
+
+  .xl\:gap-16 {
+    gap: 4rem;
   }
 
   .xl\:text-8xl {

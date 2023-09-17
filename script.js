@@ -165,4 +165,62 @@ ScrollTrigger.create({
     endTrigger: "#what-are-we-section",
     end: "top 60%",
     // markers: true,
-});     
+});    
+
+ScrollTrigger.create({
+    animation: gsap.from(
+        "#products_services_1_text", {
+        // y: "50vh",
+        // x:"50vw",
+        // scale: scaleValue,
+        yPercent: 50,
+        // xPercent:-110,
+        opacity: 0.0
+
+    }
+    ),
+    scrub: 2,
+    trigger: "#products_services_1",
+    start: "top 60%",
+    endTrigger: "#products_services_1",
+    end: "top 60%",
+    // markers: true,
+});  
+ScrollTrigger.create({
+    animation: gsap.from(
+        "#products_services_2_text", {
+        // y: "50vh",
+        // x:"50vw",
+        // scale: scaleValue,
+        yPercent: 50,
+        // xPercent:-110,
+        opacity: 0.0
+
+    }
+    ),
+    scrub: 2,
+    trigger: "#products_services_2",
+    start: "top 60%",
+    endTrigger: "#products_services_2",
+    end: "top 60%",
+    // markers: true,
+});  
+ScrollTrigger.create({
+    animation: gsap.from(
+        "#products_services_3_text", {
+        // y: "50vh",
+        // x:"50vw",
+        // scale: scaleValue,
+        yPercent: 50,
+        // xPercent:-110,
+        opacity: 0.0
+
+    }
+    ),
+    scrub: 2,
+    trigger: "#products_services_3",
+    start: "top 60%",
+    endTrigger: "#products_services_3",
+    end: "top 60%",
+    // markers: true,
+}); 
